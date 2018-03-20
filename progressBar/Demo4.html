@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo4 - 头部进度条</title>
+	<style type="text/css">
+	.loading {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: #FFFFFF;
+	}
+	.loading .pic {
+		width: 0%;
+		height: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #8B0016;
+	}
+	</style>	
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<!-- <script type="text/javascript">
+		document.onreadystatechange = function() {
+			if (document.readyState == "complete") {
+				$(".loading").fadeOut();
+			}
+		}
+	</script> -->
+</head>
+<body>
+<div class="loading"><div class="pic"></div></div>
+<header>
+	<p>页面内容 : </p>
+</header>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "10%"}, 1000);
+</script>
+
+<section>
+	<img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1309/29/c0/26600200_1380425742849.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "20%"}, 1000);
+</script>
+
+<section>
+	<img src="http://pic1.win4000.com/wallpaper/3/53587bee1dfea.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "30%"}, 1000);
+</script>
+
+<section>
+	<img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1309/29/c0/26600200_1380425742848.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "40%"}, 1000);
+</script>
+
+<section>
+	<img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1309/29/c0/26600200_1380425742851.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "50%"}, 1000);
+</script>
+
+<section>
+	<img src="http://imgstore.cdn.sogou.com/app/a/100540002/567489.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "60%"}, 1000);
+</script>
+
+<section>
+	<img src="http://imgstore.cdn.sogou.com/app/a/100540002/620255.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "70%"}, 1000);
+</script>
+
+<section>
+	<img src="http://picture.ik123.com/uploads/allimg/161206/12-161206134Z9.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "80%"}, 1000);
+</script>
+
+<section>
+	<img src="http://pic1.win4000.com/wallpaper/4/53d70ebfd249a.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "90%"}, 1000);
+</script>
+
+<section>
+	<img src="http://dl.bizhi.sogou.com/images/2012/04/03/126907.jpg" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "95%"}, 500);
+</script>
+
+<section>
+	<img src="http://pic1.win4000.com/wallpaper/c/5822b7cd77bfe.jpg?down" />
+</section>
+
+<script type="text/javascript">
+	$(".loading .pic").animate({ width: "100%"}, 500);
+	$(".loading").fadeOut();
+</script>
+
+</body>
+</html>

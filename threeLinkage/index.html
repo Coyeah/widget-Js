@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<title>JSDemo-三级城市联动</title>
+	<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<h2>城市选择：</h2>
+	<hr />
+	<h4>单选菜单：</h4>
+	<div class="select"></div>
+	<select id="province"> 
+	    <option value="">请选择</option>
+	</select>
+	<select id="city">
+	    <option value="">请选择</option>
+	</select>
+	<select id="district">
+	    <option value="">请选择</option>
+	</select>
+	<p id="result1"></p>
+	<button>获取JSON文件</button>
+	<div id="json"></div>
+<!-- JavaScript -->
+<script type="text/javascript">
+// $("button").click(function(){
+// 	$.post('./city.json', function(data){
+// 		$("#json").html(data);
+// 	});
+// });
+var area;
+var nothing = "<option value=\"\">请选择</option>"
+$(document).ready(function(){
+	$.post('./cityLinkage.txt', function(data){
+		area = JSON.parse(data);
+		// console.log(area);
+		for (var i = 0; i < area.length; i++) {
+			// console.log(area[i].name);
+			var option = "<option value=\"" + i + "\">" + area[i].name + "</option>";
+			$("#province").append(option);
+		}
+	});
+	$("#province").change(function(){
+		document.getElementById("city").innerHTML = nothing;
+		document.getElementById("district").innerHTML = nothing;
+		// var option = document.getElementById("province"); 
+		// var index = option.selectedIndex ;
+		// var value = option.options[index].value;
+		// var text = option.options[index].text;
+		var option1=$("#province option:selected");
+		// console.log(options.val());
+		// console.log(options.text());
+		for (var i = 0; i < area[option1.val()].city.length; i++) {
+			// console.log(area[option1.val()].city[i].name);
+			var option = "<option value=\"" + i + "\">" + area[option1.val()].city[i].name + "</option>";
+			$("#city").append(option);
+		}
+		
+	});
+	$("#city").change(function(){
+		document.getElementById("district").innerHTML = nothing;
+		var option1=$("#province option:selected");
+		var option2=$("#city option:selected");
+		for (var i = 0; i < area[option1.val()].city[option2.val()].area.length; i++) {
+			// console.log(area[option1.val()].city[option2.val()].area[i]);
+			var option = "<option value=\"" + i + "\">" + area[option1.val()].city[option2.val()].area[i] + "</option>";
+			$("#district").append(option);
+		}
+	});
+	$('#district').change(function(){
+		var option1=$("#province option:selected");
+		var option2=$("#city option:selected");
+		var option3=$("#district option:selected");
+		document.getElementById("result1").innerHTML = area[option1.val()].name + " - " + area[option1.val()].city[option2.val()].name + " - " + area[option1.val()].city[option2.val()].area[option3.val()];
+	});
+});
+</script>
+</body>
+</html>

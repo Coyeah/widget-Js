@@ -1,0 +1,74 @@
+body {
+	padding: 30px;
+	background-color: rgba(200,123,112,0.4);
+}
+
+#prev, #next {
+	font-size: 16px;
+	padding-left: 50px;
+	padding-right: 50px;
+	cursor: pointer;
+}
+
+.calendar {
+	width: 500px;
+	height: 400px;
+	background-color: rgba(255,255,255,1.0);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+.title {
+	margin: 2%;
+}
+
+.title-year {
+	text-align: right;
+	font-size: 24px;
+}
+
+.title-month {
+	text-align: center;
+	font-size: 26px;
+}
+
+.body {
+	font-size:14px;
+	font-weight: bold;
+}
+
+.body-list ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.body-list ul li {
+	width:14.285%;
+	height: 30px;
+	display: block;
+	box-sizing:border-box;
+	line-height: 2;
+	text-align: center;
+	float: left;
+}
+
+.lightgrey{
+	color:#a8a8a8; /*浅灰色*/
+	pointer-events: none;
+	cursor: default;
+}
+
+.darkgrey{
+	color:#565656; /*深灰色*/
+	cursor: pointer;
+}
+
+.green{
+	color:#6ac13c; /*绿色*/
+	cursor: pointer;
+}
+
+.greenbox{
+	border:1px solid #6ac13c;
+	background:#e9f8df; /*浅绿色背景*/
+}

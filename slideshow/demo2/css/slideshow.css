@@ -1,0 +1,46 @@
+#slideshow {
+	width: 800px;
+	height: 300px;
+	background-color: #888888;
+	margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#target {
+    padding: 0px;
+    margin: 0px;
+	list-style: none;
+	position: absolute;
+}
+
+.imgStart {
+	transition: left 2s;
+	-webkit-transition: left 2s;
+}
+
+#slideshow ul li {
+	width: 800px;
+	height: 300px;
+	float: left;
+}
+
+.change {
+	position: absolute;
+	width: 30px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	font-size: 36px;
+	background-color: rgba(255,255,255,0.3);
+	cursor: pointer;
+	top: 0;
+}
+
+#prev {
+	left: 0;
+}
+
+#next {
+	right: 0;
+}

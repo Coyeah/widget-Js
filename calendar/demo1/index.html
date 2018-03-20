@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<title>JSDemo-日历</title>
+	<link rel="stylesheet" type="text/css" href="./css.css">
+
+</head>
+<body>
+	<div class="calendar">
+		<h3>
+			<span id="tag_left" class="tag" onclick="monthChange('left')"><</span>
+			<span id="month"></span>
+			<span id="tag_right" class="tag" onclick="monthChange('right')">></span>
+		</h3>
+		<h4 id="year"></h4>
+		<div class="day">
+			<ul>
+				<li>SUN</li>
+				<li>MON</li>
+				<li>TUE</li>
+				<li>WED</li>
+				<li>THU</li>
+				<li>FRI</li>
+				<li>SAT</li>
+			</ul>
+		</div>
+		<hr />
+		<div id="day" class="day"></div>
+	</div>
+<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./calendar.js"></script>
+</body>
+</html>

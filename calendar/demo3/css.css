@@ -1,0 +1,75 @@
+body {
+	padding: 30px;
+	background-color: rgba(236,135,14,1.0);
+}
+
+#prev, #next {
+	font-size: 16px;
+	padding-left: 50px;
+	padding-right: 50px;
+	cursor: pointer;
+}
+
+.calendar {
+	padding: 10px;
+	width: 500px;
+	height: 400px;
+	background-color: rgba(255,255,255,1.0);
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+
+.title {
+
+}
+
+.title-year {
+	text-align: right;
+	font-size: 24px;
+}
+
+.title-month {
+	text-align: center;
+	font-size: 26px;
+}
+
+.body {
+	font-size:14px;
+	font-weight: bold;
+}
+
+.body-list ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.body-list ul li {
+	width:14.285%;
+	height: 30px;
+	display: block;
+	box-sizing:border-box;
+	line-height: 2;
+	text-align: center;
+	float: left;
+}
+
+.lightgrey{
+	color:#a8a8a8; /*浅灰色*/
+	pointer-events: none;
+	cursor: default;
+}
+
+.darkgrey{
+	color:#565656; /*深灰色*/
+	cursor: pointer;
+}
+
+.red{
+	color:#8B0016; /*红色*/
+	cursor: pointer;
+}
+
+.redbox{
+	border:1px solid #8B0016;
+	background:#F5A89A; /*浅红色背景*/
+}
