@@ -35,22 +35,23 @@ function slide(orientation) {
 		target.style.transition="none";
 		target.style.left = '-' + picPosition * li_width + 'px';
 		picPosition += orientation;
-		timeOut();
+		endTE();
 	} else if (picPosition == 0) {
 		picPosition = imgTotal + 1;
 		pointList[imgTotal - 1].classList.add("pitchOn");
 		target.style.transition="none";
 		target.style.left = '-' + picPosition * li_width + 'px';
 		picPosition += orientation;
-		timeOut();
+		endTE();
 	} else {
 		pointList[picPosition - 1].classList.add("pitchOn");
-		target.style.left = '-' + picPosition * li_width + 'px';
+		setTimeout(function () {
+			target.style.left = '-' + picPosition * li_width + 'px';
+		},20);
 	}
-	console.log(picPosition + "  " + li_width);
 }
 
-function timeOut() {
+function endTE() {
 	setTimeout(function () {
 		target.style.transition = "all 1s";
 		target.style.left = '-' + picPosition * li_width +'px';
