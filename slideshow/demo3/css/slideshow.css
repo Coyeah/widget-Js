@@ -1,0 +1,75 @@
+#slideshow {
+	border: 1px solid #000;
+	width: 600px;
+	height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#target {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	width: 4200px;
+	height: 300px;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition:all 1s;
+}
+
+#target li {
+	width: 600px;
+	height: 300px;
+	float: left;
+	background-color: green;
+}
+
+#point {
+	padding: 0 25%;
+	width: 50%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around; 
+	list-style-type: none;
+}
+
+#point li {
+	margin: 10px 0;
+	width: 10px;
+	height: 10px;
+	border: 3px solid #888;
+	border-radius: 45%;
+	cursor: pointer;
+}
+
+.pitchOn {
+	background-color: #888;
+}
+
+.btm {
+	position: absolute;
+	top: 130px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btmR {
+	right: 10px;
+}
+
+.btmL {
+	left: 10px;
+}
