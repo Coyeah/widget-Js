@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#waterfall {
+	background-color: green;
+	width: 100%;
+	height: 1000px;
+	float: left;	
+}
+
+#waterfall div {
+	background-color: yellow;
+	width: 25%;
+	float: left;
+}

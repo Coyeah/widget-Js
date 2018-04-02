@@ -1,0 +1,89 @@
+html {
+	font-size: 16px;
+}
+
+body, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+#calendar {
+	width: 100%;
+}
+
+#cal-header {
+	width: 100%;
+	height: 50px;
+	background-color: #2F2F2F;
+	color: #fff;
+	line-height: 50px;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	font-weight: bold;
+}
+
+#year {
+	font-size: 1.3rem;
+}
+
+#month {
+	font-size: 2rem;
+}
+
+#days {
+	margin-top: 50px;
+}
+
+#days ul {
+	list-style-type: none;
+	display: block;
+}
+
+#days ul li {
+	max-width: 100%;
+	height: 100px;
+	border: 1px solid #2f2f2f;
+	display: flex;
+}
+
+.day {
+	height: 100px;
+	width: 20%;
+	padding: 0 5%;
+	line-height: 100px;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: right;
+}
+
+.Sun {
+	background-color: #FF0000;
+}
+
+.Mon {
+	background-color: #FF7F00;
+}
+
+.Tue {
+	background-color: #FFFF00;
+}
+
+.Wed {
+	background-color: #00FF00;
+}
+
+.Thu {
+	background-color: #00FFFF;
+}
+
+.Fri {
+	background-color: #0000FF;
+}
+
+.Sat {
+	background-color: #8B00FF;
+}
