@@ -6,6 +6,7 @@ var weekName = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 var title_year = document.getElementById("year");
 var title_month = document.getElementById("month");
 var holder = document.getElementById("days");
+var details =  document.getElementById("dateDetails");
 
 var date = new Date();
 var this_year = date.getFullYear();
@@ -42,7 +43,7 @@ function drawDate() {
 	for (let i = 0; i < totalDay; i++) {
 		let id = this_year + "-" + this_month + "-" + (i + 1);
 		// console.log(id);
-		str += "<li id='" + id + "' class='" + weekName[weekClass] + "'><span class='day'>" + (i + 1) + "</span></li>"
+		str += "<li id='" + id + "' class='day " + weekName[weekClass] + "' onclick='dateDetails(\""+ id + "\")'><span class='day-num'>" + (i + 1) + "</span></li>"
 		if (weekClass == 6) {
 			weekClass = 0;
 		} else {
@@ -64,4 +65,10 @@ function goById() {
 		id = this_year + "-" + this_month + "-" + "1";
 	}
 	window.location.hash = id;
+}
+
+function dateDetails(id) {
+	console.log(id);
+	details.style.height = "500px";
+	details.innerHTML = id;
 }
