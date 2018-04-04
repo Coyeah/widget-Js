@@ -78,19 +78,6 @@ function dateDetails(key) {
 	switch(key) {
 	case "year": {
 		console.log("this is year!");
-		let str = "";
-		let count = 0;
-		for (let i = 0; i < 6; i++) {
-			console.log("1 for");
-			str += "<div class='details-row'>"
-			for (let j = 0; j < 2; j++) {
-				console.log("2 for");
-				str += "<span class='details-list'>" + monthName[count] + "</span>"
-				count++;
-			}
-			str += "</div>"
-		}
-		details.innerHTML = str;
 		break;
 	}
 	case "month": {
