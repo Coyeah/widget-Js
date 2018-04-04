@@ -8,8 +8,10 @@
 <body>
 	<div id="calendar">
 		<div id="cal-header">
-			<div id="month" onclick="dateDetails('month')"></div>
-			<div id="year" onclick="dateDetails('year')"></div>
+			<span class="dateChange" onclick="dateChange('prev')"><</span>
+			<div id="month"></div>
+			<div id="year"></div>
+			<span class="dateChange" onclick="dateChange('next')">></span>
 		</div>
 		<div id="days">
 			<!-- <ul>

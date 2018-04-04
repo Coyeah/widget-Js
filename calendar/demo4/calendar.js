@@ -57,41 +57,52 @@ function drawDate() {
 	holder.innerHTML = str;
 	title_year.innerHTML = this_year;
 	title_month.innerHTML = monthName[this_month];
-	goById();
+	// goById();
 }
 
 function goById() {
 	let id;
 	if (this_year == date.getFullYear() && this_month == date.getMonth()) {
 		id = this_year + "-" + this_month + "-" + (this_day - 1);
-	} else {
-		id = this_year + "-" + this_month + "-" + "1";
+		window.location.hash = id;
 	}
-	window.location.hash = id;
 }
 
 function dateDetails(key) {
 	// console.log(id);
 	curtain.style.display = "inline";
 	details.style.height = "60%";
+	console.log("this is id!");
 
-	switch(key) {
-	case "year": {
-		console.log("this is year!");
-		break;
-	}
-	case "month": {
-		console.log("this is month!");
-		break;
-	}
-	default: {
-		console.log("this is id!");
-		break;
-	}
-	}
 }
 
 function detailsBack() {
 	curtain.style.display = "none";
 	details.style.height = "0px";
+}
+
+function dateChange(key) {
+	console.log(key);
+	switch(key) {
+	case "prev": {
+		if (this_month == 0) {
+			this_month = 11;
+			this_year--;
+		} else {
+			this_month--;
+		}
+		drawDate();
+		break;
+	}
+	case "next": {
+		if (this_month == 11) {
+			this_month = 0;
+			this_year++;
+		} else {
+			this_month++;
+		}
+		drawDate();
+		break;
+	}
+	}
 }

@@ -25,6 +25,15 @@ body, p, ul, li {
 	font-weight: bold;
 }
 
+.dateChange {
+	padding: 0 3%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.3rem;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
 #year {
 	text-align: center;
 	width: 100%;
@@ -88,19 +97,6 @@ body, p, ul, li {
 	-moz-transition: all 0.5s;	/* Firefox 4 */
 	-webkit-transition: all 0.5s;	/* Safari 和 Chrome */
 	-o-transition: all 0.5s;	/* Opera */
-}
-
-.details-row {
-	height: 15%;
-	width: 100%;
-	display: flex;
-	padding-top: 20px;
-}
-
-.details-list {
-	width: 50%;
-	font-size: 1.5rem;
-	text-align: center;
 }
 
 #curtain {
