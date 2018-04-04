@@ -37,6 +37,8 @@ function daysMonth(year, month) {
 
 // 绘制日历
 function drawDate() {
+	detailsBack();
+
 	let totalDay = daysMonth(this_year, this_month);
 	let weekClass = dayStart(this_year, this_month);
 	let str = "<ul>";
@@ -68,11 +70,38 @@ function goById() {
 	window.location.hash = id;
 }
 
-function dateDetails(id) {
+function dateDetails(key) {
 	// console.log(id);
-	curtain.style.display = "block";
+	curtain.style.display = "inline";
 	details.style.height = "60%";
-	details.innerHTML = id;
+
+	switch(key) {
+	case "year": {
+		console.log("this is year!");
+		let str = "";
+		let count = 0;
+		for (let i = 0; i < 6; i++) {
+			console.log("1 for");
+			str += "<div class='details-row'>"
+			for (let j = 0; j < 2; j++) {
+				console.log("2 for");
+				str += "<span class='details-list'>" + monthName[count] + "</span>"
+				count++;
+			}
+			str += "</div>"
+		}
+		details.innerHTML = str;
+		break;
+	}
+	case "month": {
+		console.log("this is month!");
+		break;
+	}
+	default: {
+		console.log("this is id!");
+		break;
+	}
+	}
 }
 
 function detailsBack() {
