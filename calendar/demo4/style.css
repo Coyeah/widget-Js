@@ -20,7 +20,7 @@ body, p, ul, li {
 	display: flex;
 	justify-content: space-around;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	top: 0;
 	left: 0;
 	font-weight: bold;
@@ -63,7 +63,7 @@ body, p, ul, li {
 #dateDetails {
 	display: flex;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -75,6 +75,17 @@ body, p, ul, li {
 	-moz-transition: all 0.5s;	/* Firefox 4 */
 	-webkit-transition: all 0.5s;	/* Safari 和 Chrome */
 	-o-transition: all 0.5s;	/* Opera */
+}
+
+#curtain {
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
 }
 
 .Sun {

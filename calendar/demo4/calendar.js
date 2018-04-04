@@ -7,6 +7,7 @@ var title_year = document.getElementById("year");
 var title_month = document.getElementById("month");
 var holder = document.getElementById("days");
 var details =  document.getElementById("dateDetails");
+var curtain = document.getElementById("curtain");
 
 var date = new Date();
 var this_year = date.getFullYear();
@@ -68,7 +69,13 @@ function goById() {
 }
 
 function dateDetails(id) {
-	console.log(id);
-	details.style.height = "500px";
+	// console.log(id);
+	curtain.style.display = "block";
+	details.style.height = "60%";
 	details.innerHTML = id;
+}
+
+function detailsBack() {
+	curtain.style.display = "none";
+	details.style.height = "0px";
 }
