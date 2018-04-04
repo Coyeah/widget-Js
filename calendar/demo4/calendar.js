@@ -44,7 +44,7 @@ function drawDate() {
 	for (let i = 0; i < totalDay; i++) {
 		let id = this_year + "-" + this_month + "-" + (i + 1);
 		// console.log(id);
-		str += "<li id='" + id + "' class='day " + weekName[weekClass] + "' onclick='dateDetails(\""+ id + "\")'><span class='day-num'>" + (i + 1) + "</span></li>"
+		str += "<li id='" + id + "' class='day " + weekName[weekClass] + "' onclick='dateDetails(\""+ id + "\")'><span class='day-num'>" + (i + 1) + "</span><span class='day-name'>" + weekName[weekClass] + "</span></li>"
 		if (weekClass == 6) {
 			weekClass = 0;
 		} else {

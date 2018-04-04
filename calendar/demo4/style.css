@@ -48,6 +48,7 @@ body, p, ul, li {
 	height: 100px;
 	border: 3px solid #2f2f2f;
 	display: flex;
+	justify-content: space-between;
 }
 
 .day-num {
@@ -58,6 +59,16 @@ body, p, ul, li {
 	font-size: 3rem;
 	font-weight: bold;
 	text-align: right;
+}
+
+.day-name {
+	height: 100px;
+	width: 20%;
+	padding: 0 5%;
+	line-height: 100px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
 }
 
 #dateDetails {
