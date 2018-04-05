@@ -44,7 +44,7 @@ function drawDate() {
 	let str = "<ul>";
 	let classList = "";
 	for (let i = 0; i < totalDay; i++) {
-		let id = this_year + "-" + this_month + "-" + (i + 1);
+		let id = this_year + "-" + (this_month + 1) + "-" + (i + 1);
 		// console.log(id);
 		str += "<li id='" + id + "' class='day " + weekName[weekClass] + "' onclick='dateDetails(\""+ id + "\")'><span class='day-num'>" + (i + 1) + "</span><span class='day-name'>" + weekName[weekClass] + "</span></li>"
 		if (weekClass == 6) {
@@ -57,15 +57,6 @@ function drawDate() {
 	holder.innerHTML = str;
 	title_year.innerHTML = this_year;
 	title_month.innerHTML = monthName[this_month];
-	// goById();
-}
-
-function goById() {
-	let id;
-	if (this_year == date.getFullYear() && this_month == date.getMonth()) {
-		id = this_year + "-" + this_month + "-" + (this_day - 1);
-		window.location.hash = id;
-	}
 }
 
 function dateDetails(key) {
@@ -73,7 +64,7 @@ function dateDetails(key) {
 	curtain.style.display = "inline";
 	details.style.height = "60%";
 	console.log("this is id!");
-
+	details.innerHTML = "<h1>" + key + "</h1>";
 }
 
 function detailsBack() {
