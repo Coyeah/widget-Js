@@ -1,6 +1,6 @@
 # widget-js
 
-> Homemade wheel about JS widgets.
+> Wheel about JS widgets.
 
 * calendar - 日历控件
 
@@ -13,5 +13,13 @@
 * slideshow - 图片轮播框
 
 ![slideshow-gif](https://github.com/Coyeah/widget-js/blob/master/slideshow.gif)
+
+* waterfall - 瀑布流布局框
+
+![waterfall-gif](https://github.com/Coyeah/widget-js/blob/master/waterfall.gif)
+
+* dazzleHover - 炫彩鼠标悬停
+
+![dazzleHover-gif](https://github.com/Coyeah/widget-js/blob/master/dazzleHover.gif)
 
 * threeLinkage - 三级单选
