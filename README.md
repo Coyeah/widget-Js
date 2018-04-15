@@ -4,32 +4,32 @@
 
 ## calendar - 日历控件
 
-![calendar-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/calendar.gif)
+![calendar-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/calendar.gif)
 
 ## progressBar - 加载进度条
 
-![progressBar-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/progressBar.gif)
+![progressBar-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/progressBar.gif)
 
 ## slideshow - 图片轮播框
 
-![slideshow-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/slideshow.gif)
+![slideshow-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/slideshow.gif)
 
 ## waterfall - 瀑布流布局框
 
-![waterfall-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/waterfall.gif)
+![waterfall-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/waterfall.gif)
 
 ## sidebar - 滑动侧边栏
 
-![sidebar-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/sidebar.gif)
+![sidebar-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/sidebar.gif)
 
 ## dazzleHover - 炫彩鼠标悬停
 
-![dazzleHover-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/dazzleHover.gif)
+![dazzleHover-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/dazzleHover.gif)
 
 ## scrollBack - 滚动至顶
 
-![scrollBack-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/scrollBack.gif)
+![scrollBack-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/scrollBack.gif)
 
 ## threeLinkage - 三级单选
 
-![threeLinkage-gif](https://github.com/Coyeah/widget-js/blob/master/gif_file/threeLinkage.gif)
+![threeLinkage-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/threeLinkage.gif)
