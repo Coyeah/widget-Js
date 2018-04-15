@@ -25,11 +25,11 @@
 	<div id="json"></div>
 <!-- JavaScript -->
 <script type="text/javascript">
-// $("button").click(function(){
-// 	$.post('./city.json', function(data){
-// 		$("#json").html(data);
-// 	});
-// });
+$("button").click(function(){
+	$.post('./cityLinkage.txt', function(data){
+		$("#json").html(data);
+	});
+});
 var area;
 var nothing = "<option value=\"\">请选择</option>"
 $(document).ready(function(){
