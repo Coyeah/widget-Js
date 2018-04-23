@@ -30,6 +30,10 @@
 
 ![scrollBack-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/scrollBack.gif)
 
+## dragAndDrop - 元素拖拽
+
+![dragAndDrop-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/dragAndDrop.gif)
+
 ## threeLinkage - 三级单选
 
 ![threeLinkage-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/threeLinkage.gif)
