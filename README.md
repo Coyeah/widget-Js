@@ -34,6 +34,10 @@
 
 ![dragAndDrop-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/dragAndDrop.gif)
 
+## tableClickSort - 表单点击排序
+
+![tableClickSort-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/tableClickSort.gif)
+
 ## threeLinkage - 三级单选
 
 ![threeLinkage-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/threeLinkage.gif)
