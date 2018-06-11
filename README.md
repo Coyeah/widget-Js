@@ -38,6 +38,10 @@
 
 ![tableClickSort-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/tableClickSort.gif)
 
+## bouncingBalls - 滚动球
+
+![bouncingBalls-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/bouncingBalls.gif)
+
 ## threeLinkage - 三级单选
 
 ![threeLinkage-gif](https://github.com/Coyeah/widget-js/blob/master/gif_folder/threeLinkage.gif)
